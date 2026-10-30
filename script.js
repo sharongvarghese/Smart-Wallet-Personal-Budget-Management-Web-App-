@@ -12,8 +12,7 @@ function log() {
       alert("Incorrect Password");
     }
   } else {
-    alert("User not found!");
-    alert("Please sign up first.");
+    alert("User not found!.Please sign up first.");
     window.location.href = "register.html";
   }
 }
@@ -42,7 +41,7 @@ function signUp() {
   };
   localStorage.setItem("user", JSON.stringify(newUser));
   alert("Registration Successfully");
-  window.location.href = "index.html";
+  window.location.href = "dashboard.html";
 }
 
 // dashboard scripts
@@ -67,7 +66,6 @@ function addIncome() {
 
   totalIncome += incomeAmt;
   totalBalance += incomeAmt;
-
   document.querySelector("#totalIncome h2").innerText = `₹ ${totalIncome}`;
   document.querySelector("#totalBalance h2").innerText = `₹ ${totalBalance}`;
 
@@ -78,6 +76,7 @@ function addIncome() {
 
   totalTransactions++;
   document.querySelector("#totalTransactions h2").innerText = totalTransactions;
+
 }
 
 function addExpense() {
