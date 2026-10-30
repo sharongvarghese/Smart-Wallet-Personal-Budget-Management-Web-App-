@@ -1,0 +1,356 @@
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* COMMON LOGIN & REGISTER STYLES */
+
+.login-form {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-form span {
+  color: blue;
+}
+
+.login-form .form-control {
+  min-height: 48px;
+  font-size: 1rem;
+}
+
+.login-form .btn {
+  min-height: 48px;
+}
+
+.signup-text {
+  font-size: 1rem;
+}
+
+/* COMMON PAGE HEADINGS */
+
+.wallet-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.wallet-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.7rem);
+  font-family: "Playfair Display", serif;
+}
+
+/* LOGIN PAGE */
+
+.login-section {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.login-image {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.login-description {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.forgot-link {
+  text-decoration: none;
+}
+
+/* REGISTRATION PAGE */
+
+.register-section {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.register-image {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.register-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+/* DASHBOARD - GENERAL STYLES */
+
+.dashboard-body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f8f9fc;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* DASHBOARD HEADER */
+
+.dashboard-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #11164a;
+}
+
+.dashboard-actions .btn {
+  white-space: nowrap;
+}
+
+/* DASHBOARD SUMMARY CARDS */
+
+.summary-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.summary-amount h2 {
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  font-weight: 700;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+/* INCOME & EXPENSE FORMS */
+
+.entry-card {
+  min-width: 0;
+}
+
+.entry-card h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.entry-card .form-control {
+  min-height: 46px;
+  font-size: 1rem;
+}
+
+.entry-card .btn {
+  min-height: 46px;
+}
+
+/* TRANSACTION SECTION */
+
+.transaction-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #5438e8;
+  background-color: #f1efff;
+}
+
+.transaction-heading {
+  color: #11164a;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+}
+
+/* TRANSACTION TABLE */
+
+.transaction-table {
+  min-width: 600px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 14px 12px;
+  white-space: nowrap;
+}
+
+/* EXPENSE BREAKDOWN CHART */
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+/* 
+TABLET RESPONSIVE STYLES
+Bootstrap breakpoint: Below 992px */
+
+@media (max-width: 991.98px) {
+  /* Login */
+  .login-image {
+    max-width: 500px;
+  }
+
+  .login-form {
+    max-width: 520px;
+  }
+
+  /* Registration */
+  .register-image {
+    max-width: 500px;
+  }
+
+  /* Dashboard */
+  .dashboard-container {
+    padding-top: 24px;
+  }
+
+  .summary-card {
+    padding: 20px !important;
+  }
+
+  .chart-container {
+    height: 280px;
+  }
+}
+
+/* MOBILE RESPONSIVE STYLES
+Bootstrap breakpoint: Below 576px */
+
+@media (max-width: 575.98px) {
+  /* Common Headings */
+  .wallet-title {
+    font-size: 2rem;
+  }
+
+  .wallet-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Login Page */
+  .login-image {
+    max-width: 100%;
+  }
+
+  .login-form {
+    padding: 1.25rem !important;
+  }
+
+  .login-form h1 {
+    font-size: 1.6rem;
+  }
+
+  .login-description {
+    font-size: 0.9rem;
+  }
+
+  .signup-text {
+    font-size: 0.9rem;
+  }
+
+  /* Registration Page */
+  .register-image {
+    max-width: 100%;
+  }
+
+  .register-title {
+    font-size: 1.6rem;
+  }
+
+  .register-section .login-form {
+    padding: 1.25rem !important;
+  }
+
+  .register-section .login-form p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Dashboard Header */
+  .dashboard-title {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-header p {
+    font-size: 0.9rem;
+  }
+
+  .dashboard-actions {
+    width: 100%;
+  }
+
+  .dashboard-actions .btn {
+    flex: 1;
+  }
+
+  /* Summary Cards */
+  .summary-card {
+    padding: 18px !important;
+  }
+
+  /* Income & Expense Forms */
+  .entry-card {
+    padding: 18px !important;
+  }
+
+  /* Transaction Section */
+  .transaction-heading {
+    font-size: 1.15rem;
+  }
+
+  .transaction-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Chart */
+  .chart-container {
+    height: 240px;
+  }
+}
+
+/* EXTRA SMALL DEVICES
+Screens below 360px */
+
+@media (max-width: 359.98px) {
+  .wallet-title {
+    font-size: 1.7rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-actions .btn {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .summary-amount h2 {
+    font-size: 1.2rem;
+  }
+}

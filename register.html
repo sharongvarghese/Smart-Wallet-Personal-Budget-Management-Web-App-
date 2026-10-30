@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Smart Wallet | Register</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="register-section">
+      <!-- Page Heading -->
+      <div class="text-center pt-4 pt-md-5 px-3">
+        <h1 class="wallet-title">Smart Wallet</h1>
+
+        <h2 class="wallet-subtitle text-muted mt-3">
+          Steering Family Finances as One ...
+        </h2>
+      </div>
+
+      <!-- Responsive Layout -->
+      <div class="container-fluid px-3 px-md-4 px-lg-5">
+        <div
+          class="row align-items-center justify-content-center g-4 py-4 py-md-5"
+        >
+          <!-- Left Side: Registration Image -->
+          <div class="col-12 col-lg-7 text-center">
+            <img
+              src="./images/registration.png"
+              class="img-fluid register-image"
+              alt="Smart Wallet registration illustration"
+            />
+          </div>
+
+          <!-- Right Side: Registration Form -->
+          <div class="col-12 col-md-10 col-lg-5">
+            <div
+              class="login-form text-center rounded-4 p-3 p-sm-4 p-md-5 mx-auto"
+            >
+              <h1 class="text-primary register-title">Create Account</h1>
+
+              <p class="text-muted mt-3">
+                Your journey to smarter money management starts here.
+              </p>
+
+              <form onsubmit="return false;">
+                <input
+                  id="sgnName"
+                  type="text"
+                  class="form-control mt-4"
+                  placeholder="Enter Your Full Name"
+                  autocomplete="name"
+                />
+
+                <input
+                  id="sgnEmail"
+                  type="email"
+                  class="form-control mt-3"
+                  placeholder="Enter Your Email"
+                  autocomplete="email"
+                />
+
+                <input
+                  id="sgnPassw"
+                  type="password"
+                  class="form-control mt-3"
+                  placeholder="Enter Your Password"
+                  autocomplete="new-password"
+                />
+
+                <input
+                  id="sgnConPassw"
+                  type="password"
+                  class="form-control mt-3"
+                  placeholder="Confirm Password"
+                  autocomplete="new-password"
+                />
+
+                <button
+                  type="button"
+                  onclick="signUp()"
+                  class="btn btn-primary w-100 mt-3"
+                >
+                  Register
+                </button>
+              </form>
+
+              <p class="text-muted mt-4 mb-0 signup-text">
+                Already have an account?
+                <a id="reglogin" href="./index.html"> Login </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Existing JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
